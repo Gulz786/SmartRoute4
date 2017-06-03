@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_resetvehicle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.gul.smartroute.resetvehicle">
+
+
+    <EditText
+
+
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:maxLines="1"
+        android:theme="@style/MyEditText"
+        android:textColorHint="@color/divider"
+        android:layout_marginTop="145dp"
+        android:id="@+id/etEmail"
+        android:hint="Enter Vehicle Registration Number"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <include layout="@layout/app_bar"
+        android:id="@+id/app_bar"
+        />
+
+
+    <Spinner
+
+
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dropDownSelector="@color/primary_light"
+
+        android:id="@+id/spinner"
+        android:popupBackground="@color/common_google_signin_btn_text_dark_disabled"
+        android:dropDownWidth="match_parent"
+        android:fadingEdge="horizontal|vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="visible"
+        android:layout_below="@+id/textView"
+
+        android:layout_marginTop="42dp" />
+
+    <Button
+        android:radius="2dp"
+        android:background="@color/colorAccent"
+        android:textColor="@color/primary_text"
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/press"
+        android:onClick="onclick (vehiclestart)"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        style="@style/Base.AlertDialog.AppCompat.Light"
+
+        android:text="Kindly Select Your Department"
+        android:gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

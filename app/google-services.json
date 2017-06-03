@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "680290733454",
+    "firebase_url": "https://smartroute4.firebaseio.com",
+    "project_id": "smartroute4",
+    "storage_bucket": "smartroute4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680290733454:android:e81959665462cab0",
+        "android_client_info": {
+          "package_name": "com.gul.smartroute"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680290733454-cc5hdkl986tqinatm8ss46squceh200u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gul.smartroute",
+            "certificate_hash": "d76aac1ef7c47183e2912e97942f0f19dc5fb194"
+          }
+        },
+        {
+          "client_id": "680290733454-vi8b9gq82vuft3lbll4epkc9kckbar73.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxX_Pz8hhBf2sN-iXUcvbSfK6nSrp8R3g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680290733454-vi8b9gq82vuft3lbll4epkc9kckbar73.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gul.smartroute.index"
+    >
+
+    <Button
+
+        android:id="@+id/aa"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+
+        android:background="@color/icons"
+        android:drawableTint="@color/colorPrimary"
+        android:drawableTop="@drawable/aam"
+        android:elevation="7dp"
+
+
+        android:text="Ambulance"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/lifters"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:background="@color/icons"
+        android:drawableTint="@color/colorPrimary"
+        android:drawableTop="@drawable/bbl"
+
+
+        android:elevation="7dp"
+        android:text="Lifters"
+
+
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/fire"
+        android:layout_width="100dp"
+
+        android:layout_height="140dp"
+
+        android:background="@color/icons"
+        android:drawableTint="@color/colorPrimary"
+        android:drawableTop="@drawable/ff"
+        android:elevation="7dp"
+
+
+        android:text="Fire Brigade"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginEnd="13dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:drawableRight="@drawable/handfi"
+        android:drawableTint="@color/colorPrimary"
+
+        android:foregroundGravity="center"
+        android:gravity="left"
+        android:text="Kindly Select Your Department"
+        android:textColor="@color/primary_text"
+        android:textSize="20sp"
+
+        android:layout_above="@+id/aa"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="55dp" />
+
+    <include layout="@layout/app_bar"
+        android:id="@+id/app_bar"
+         />
+
+    <ImageView
+        android:layout_below="@+id/app_bar"
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/logof"
+        android:layout_alignRight="@+id/email"
+        android:layout_alignEnd="@+id/email"
+        />
+
+    <EditText
+
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:drawableLeft="@drawable/vehicle"
+        android:textColor="@color/primary_text"
+        android:textColorHint="@color/primary_text"
+        android:drawablePadding="10dp"
+        android:hint=" Vehicle Registration Number"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        android:drawableTint="@color/colorPrimary"
+
+
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="28dp" />
+
+
+</RelativeLayout>

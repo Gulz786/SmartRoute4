@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gul.smartroute.cnic">
+
+
+    <include layout="@layout/app_bar"
+            android:id="@+id/app_bar"
+         />
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:drawablePadding="10dp"
+
+
+            android:hint="Cnic"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/cnic2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kindly Enter Your CNIC to get Password"
+        android:layout_above="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp" />
+
+    <Button
+        android:id="@+id/Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:text="Generate password" />
+
+
+</RelativeLayout>
+
+
+
+
+
+

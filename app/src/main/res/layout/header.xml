@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/gg"
+    >
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="130dp"
+    android:src="@drawable/logow"
+        android:id="@+id/view"
+        android:layout_marginLeft="35dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SteadFast Groups"
+        android:textSize="15sp"
+        android:layout_below="@+id/view"
+        android:id="@+id/txt"
+        android:textColor="@color/icons"
+        android:gravity="center"
+        android:textStyle="bold"
+
+         />
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="www.lifesavior.pk"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/txt"
+        android:textColor="@color/icons"
+         />
+
+
+
+
+
+
+
+</RelativeLayout>

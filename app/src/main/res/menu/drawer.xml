@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+    <item android:id="@+id/distance"
+        android:title="Distance Calculator"
+        android:icon="@drawable/ic_distance"></item>
+
+    <item android:id="@+id/vehi"
+        android:title="Reset Vehicle Info"
+        android:icon="@drawable/vehicle"></item>
+
+    <item android:id="@+id/about"
+        android:title="About Us"
+        android:icon="@drawable/about"></item>
+    <item android:id="@+id/contact"
+    android:title="Contact Us"
+    android:icon="@drawable/phone"></item>
+
+
+<item android:title="Exit">
+    <menu>
+
+        <item
+            android:title="Logout"
+            android:id="@+id/log"
+            android:icon="@drawable/llogo"
+            ></item>
+
+
+
+    </menu>
+
+
+
+</item>
+
+</group>
+</menu>
