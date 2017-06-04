@@ -25,11 +25,17 @@ android:layout_height="match_parent"
         >
 
 
-
-
+        <Button
+            android:id="@+id/done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Done"
+            android:textColor="@color/primary_text"
+            android:background="@color/icons"/>
 
         <Button
-            android:layout_marginLeft="140dp"
+            android:layout_marginLeft="120dp"
             android:id="@+id/setButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -38,6 +44,7 @@ android:layout_height="match_parent"
             android:text="Driving"
             android:textColor="@color/primary_text"
             android:background="@color/icons"/>
+
 
 
 

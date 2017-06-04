@@ -25,7 +25,14 @@
             >
 
 
-
+            <Button
+                android:id="@+id/done"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Done"
+                android:textColor="@color/primary_text"
+                android:background="@color/icons"/>
 
 
             <Button

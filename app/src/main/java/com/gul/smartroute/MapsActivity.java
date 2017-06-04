@@ -76,7 +76,7 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     TextView tvDistanceDuration;
     TextView tvDuration;
 
-    Button btn1,btn2,btn3,btn4;
+    Button btn1,btn2,btn3,btn4,btndone;
 
     public  String lat;
     public String lng;
@@ -85,14 +85,13 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     Button btn;
     android.support.v7.app.ActionBarDrawerToggle actiionBarDrawerToggle;
     Toolbar toolbar;
-    FragmentTransaction fragmentTransaction;
+   // FragmentTransaction fragmentTransaction;
     NavigationView navigationView;
-Button btnr;
-    String spin;
 
-    double latitude;
-    double longitude;
-    private int PROXIMITY_RADIUS = 5000;
+
+ //   double latitude;
+ //   double longitude;
+ //   private int PROXIMITY_RADIUS = 5000;
 
 
 
@@ -135,7 +134,7 @@ Button btnr;
 
 
 
-
+        btndone= (Button)findViewById(R.id.done);
         tvDistanceDuration = (TextView) findViewById(R.id.tv_distance_time);
         tvDuration=(TextView)findViewById(R.id.tvDuration);
 
@@ -151,6 +150,11 @@ Button btnr;
         drawerLayout.addDrawerListener(actiionBarDrawerToggle);
 
 
+        // disable a  button
+
+       // btn.setVisibility(View.GONE);
+
+
 // for setting fragment in any activity
 
 /*fragmentTransaction=getSupportFragmentManager().beginTransaction();
@@ -158,7 +162,28 @@ Button btnr;
 fragmentTransaction.add(R.id.frame_container,new BlankFragment());
  fragmentTransaction.commit();
 getSupportActionBar().setTitle("Home");
+
+
 */
+
+btndone.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        SharedPreferences share= getSharedPreferences(userfile, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor=share.edit();
+
+
+        editor.putString("status","Available");
+        editor.putString("user_id",null);
+        editor.commit();
+
+        Intent refresh =new Intent(MapsActivity.this, MapsActivity.class);
+        startActivity(refresh);
+
+
+    }
+});
+
 
         SharedPreferences shared= getSharedPreferences(userfile, Context.MODE_PRIVATE);
         String useid=shared.getString("user_id",null);

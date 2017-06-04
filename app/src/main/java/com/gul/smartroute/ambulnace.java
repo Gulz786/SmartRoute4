@@ -75,7 +75,7 @@ public class ambulnace extends AppCompatActivity implements OnMapReadyCallback, 
     TextView tvDistanceDuration;
     TextView tvDuration;
 
-    Button btn1,btn2,btn3;
+    Button btn1,btn2,btn3,btndone;
 
     public  String lat;
     public String lng;
@@ -126,6 +126,7 @@ public class ambulnace extends AppCompatActivity implements OnMapReadyCallback, 
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+     //   btn.setVisibility(View.GONE);
 
 
 
@@ -252,7 +253,24 @@ getSupportActionBar().setTitle("Home");
 
         MarkerPoints = new ArrayList<>();
 
+        btndone= (Button)findViewById(R.id.done);
+        btndone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                SharedPreferences share= getSharedPreferences(userfile, Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor=share.edit();
 
+
+                editor.putString("status","Available");
+                editor.putString("user_id",null);
+                editor.commit();
+
+                Intent refresh =new Intent(ambulnace.this,ambulnace.class);
+                startActivity(refresh);
+
+
+            }
+        });
 
 
 
